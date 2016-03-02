@@ -1,9 +1,9 @@
 # language setting
-language: node_js
+language: python
 
 # Version number
-node_js:
-  - '0.10'
+python:
+  - 2.7
 
 env:
   global:
@@ -16,6 +16,7 @@ env:
 build:
   ci:
     - echo "Hello, World!"
+    - sleep 10m
     
 integrations:
   notifications:
