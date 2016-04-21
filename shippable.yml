@@ -19,7 +19,7 @@ build:
     
 integrations:
   notifications:
-    - integrationName: Slack-Test
+    - integrationName: slack-Test
       type: slack
       recipients: 
         - "#harryi3t"
