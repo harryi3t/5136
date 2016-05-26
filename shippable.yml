@@ -14,8 +14,11 @@ env:
     - M2=TWO
 
 build:
-  ci:
-    - echo "Hello, World!"
+  pre_ci_boot:
+    image_name: harryi3t/u12jav
+    image_tag: latest
+    pull: true
+    options: "-e HOME=/root"
     
 integrations:
   notifications:
