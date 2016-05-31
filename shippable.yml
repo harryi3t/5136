@@ -15,7 +15,7 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u12jav
+    image_name: drydock/u12jav:prod
     image_tag: latest
     pull: true
     options: "-e HOME=/root"
