@@ -15,8 +15,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u12jav
-    image_tag: prod
+    image_name: harryi3t/u12javpls-auto
+    image_tag: latest
     pull: true
     options: "-e HOME=/root"
     
