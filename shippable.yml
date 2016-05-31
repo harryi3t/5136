@@ -9,10 +9,6 @@ env:
   global:
     - FOO=FUBU
 
-  matrix:
-    - M1=ONE
-    - M2=TWO
-
 build:
   pre_ci_boot:
     image_name: drydock/u12jav
