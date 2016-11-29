@@ -18,15 +18,3 @@ build:
     - echo "Hello, World!"
     - sleep 10m
     
-integrations:
-  notifications:
-    - integrationName: Slack-Test
-      type: slack
-      recipients: 
-        - "#harryi3t"
-        - "#testIssues"
-        
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
