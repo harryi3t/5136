@@ -16,3 +16,13 @@ env:
 build:
   ci:
     - echo "Hello, World!"
+
+
+integrations:
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+        - harendra@shippable.com
+      on_success: always
+      on_failure: always
