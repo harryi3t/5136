@@ -1,4 +1,4 @@
-# language setting
+# language setting  
 language: node_js
 
 # Version number
@@ -7,7 +7,7 @@ node_js:
 
 env:
   global:
-    - FOO=FUBU
+    - g1=global_value_1
 
   matrix:
     - M1=ONE
@@ -16,16 +16,3 @@ env:
 build:
   ci:
     - echo "Hello, World!"
-    
-integrations:
-  notifications:
-    - integrationName: Slack-Test
-      type: slack
-      recipients: 
-        - "#harryi3t"
-        - "#testIssues"
-        
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
