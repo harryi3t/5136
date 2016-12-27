@@ -1,21 +1,16 @@
 # language setting  
 language: node_js
 
+env:
+  global:
+    - FOO=FUBU
+    
+    
+
 # Version number
 node_js:
   - '0.10'
 
-env:
-  global:
-    - FOO=FUBU
-
-build:
-  pre_ci_boot:
-    image_name: drydock/u12jav
-    image_tag: prod
-    pull: true
-    options: "-e HOME=/root"
-    
 integrations:
   notifications:
     - integrationName: slack-test
@@ -23,8 +18,10 @@ integrations:
       recipients: 
         - "#harryi3t"
         - "#testIssues" 
-        
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u12jav
+    image_tag: prod
+    pull: true
+    options: "-e HOME=/root"
